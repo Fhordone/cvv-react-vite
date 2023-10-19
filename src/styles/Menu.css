@@ -1,0 +1,148 @@
+@import 'normalize.css';
+body{
+    background: #F2F3F8;
+    padding: 0;
+    margin: 0;
+}
+.menu {
+    height: 7vh;
+    background-color: #10495F; /* Color de fondo verde */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    position: fixed; /* Fija el menú en la parte superior */
+    top: 0; /* Lo coloca en la parte superior de la ventana */
+    left: 0; /* Alinea el menú a la izquierda */
+    right: 0; /* Alinea el menú a la derecha */
+}
+
+/* Estilos para el logo */
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 5px; /* Ajusta el relleno */
+}
+
+.logo img {
+    max-width: 150px; /* Ajusta el ancho máximo del logo */
+    height: auto;
+}
+
+/* Estilos para el botón de perfil */
+.profile-button {
+    color: #fff; /* Color del texto blanco */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el icono de perfil (puedes usar una fuente de iconos como FontAwesome) */
+.profile-icon {
+    margin-right: 5px;
+}
+.container-menu-desplegable {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transition: all 500ms ease;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+  }
+.contenido-menu-desplegable{
+    width: 100%;
+    max-width: 300px;
+    background: #EFEFEF;
+    height: 100vh;
+    position: relative;
+    transition: all 500ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu-desplegable:checked ~ .container-menu-desplegable {
+    opacity: 1;
+    visibility: visible;
+}
+#btn-menu-desplegable:checked ~ .container-menu-desplegable .contenido-menu-desplegable {
+    transform: translateX(0%);
+    padding-top: 5vh;
+}
+.container-menu-desplegable .submenu {
+    transform: translateY(-5%);
+  }
+.content-menu-user{
+    width: 100%;
+    background-color: #042354;
+    height: 20vh;
+    padding: 30px 15px 10px 30px;
+}
+.content-menu-user h1{
+    color: #EFEFEF;
+    font-size: 30px;
+}
+.content-menu-user p{
+    color: #EFEFEF;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+.container-menu-desplegable nav .option-menu{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #042354;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+.container-menu-desplegable nav a:hover{
+    border-left: none;
+    background: #10495F; 
+    color: #fff;
+}
+.container-menu-desplegable nav .option-submenu{
+    display: block;
+    text-decoration: none;
+    padding: 5px 5px 5px 5px;
+    color: #042354;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 550;
+    font-size: 12.5px;
+}
+.container-menu-desplegable label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #042354;
+    cursor: pointer;
+    font-size: 18px;
+}
+.menu-desplegable .fa-bars {
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer; /* Cambia el color a rojo (#ff0000) o al color que prefieras */
+  }
+  #btn-menu-desplegable{
+    display: none;
+}
+.submenu {
+    display: none;
+}
+
+#btn-menu-desplegable:checked ~ .container-menu-desplegable .contenido-menu-desplegable .submenu {
+    display: block;
+}
+a .option-submenu{
+    padding-right: 25px;
+}
+.icon-profile{
+    color: white;
+    margin: 0px 0px 0px 5px;
+}

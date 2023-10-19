@@ -4,11 +4,12 @@ import App from "./pages/App"
 import "./styles/index.css"
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 
-import Login from "./pages/Login"
 import ListarPacientes from "./pages/Pacientes/ListarPacientes"
 import AgregarPaciente from "./pages/Pacientes/AgregarPaciente"
 import EditarPaciente from "./pages/Pacientes/EditarPaciente"
 import DetallePaciente from "./pages/Pacientes/DetallePaciente"
+import Menu from "./pages/Resources/Menu"
+import Login from "./pages/Login"
 
 
 const router = createHashRouter([
@@ -29,8 +30,12 @@ const router = createHashRouter([
     element: <DetallePaciente />
   },
   {
-    path: "/", 
+    path: "/login",
     element: <Login />
+  },
+  {
+    path: "/", 
+    element: <Menu />
   },
 ])
 
