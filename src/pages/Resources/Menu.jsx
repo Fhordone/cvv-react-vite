@@ -37,14 +37,14 @@ export default function Menu() {
             <div class="container-menu-desplegable">
                 <div class="contenido-menu-desplegable">
                     <nav>
-                    <a className='option-menu' href="#">Dashboard</a>
+                    <a className='option-menu' href="#/dashboard">Dashboard</a>
                         <a className='option-menu' href="#" onClick={() => toggleSubMenu('usuarios')}>
                             Usuarios
                         </a>
                         {subMenus.usuarios && (
                             <div className="submenu">
-                                <a className='option-submenu' href="#">Opción 1</a>
-                                <a className='option-submenu' href="#">Opción 2</a>
+                                <a className='option-submenu' href="#">Pacientes</a>
+                                <a className='option-submenu' href="#">Médicos</a>
                             </div>
                         )}
                         <a className='option-menu' href="#" onClick={() => toggleSubMenu('citas')}>
@@ -52,8 +52,8 @@ export default function Menu() {
                         </a>
                         {subMenus.citas && (
                             <div className="submenu">
-                                <a className='option-submenu' href="#">Opción 1</a>
-                                <a className='option-submenu' href="#">Opción 2</a>
+                                <a className='option-submenu' href="#">Reservar cita</a>
+                                <a className='option-submenu' href="#">Resultados</a>
                             </div>
                         )}
                         <a className='option-menu' href="#" onClick={() => toggleSubMenu('configuracion')}>
@@ -61,7 +61,7 @@ export default function Menu() {
                         </a>
                         {subMenus.configuracion && (
                             <div className="submenu">
-                                <a className='option-submenu' href="#">Opción 1</a>
+                                <a className='option-submenu' href="#">Pruebas</a>
                                 <a className='option-submenu' href="#">Opción 2</a>
                             </div>
                         )}

@@ -2,7 +2,10 @@
   width: 100vw;
   height: 100vh;
   background: #10495f url(/src/images/fondo-login.svg) repeat fixed;
-    overflow: hidden;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra verticalmente */
 }
 .login-container {
     display: flex;
@@ -12,6 +15,7 @@
     background-color: #007bff;
     border-radius: 20px;
     width: 60vw;
+    margin: auto;
   }
   
   .left-section {
