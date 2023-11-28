@@ -67,3 +67,12 @@
     border-top: #e6e6e6 1px solid;
     font-size: 14px;
 }
+.box-crear-formulario{
+    width: 100vw;
+    padding: 20px 50px ;
+}
+.btn-formulario{
+    border-radius: 5px;
+    width: 15%;
+    font-size: 13px;
+}

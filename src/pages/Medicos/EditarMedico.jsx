@@ -1,5 +1,4 @@
-import './../../styles/Pacientes.css'
-export default function DetalleMedico() {
+export default function EditarMedico(){
     return (
         <div className="box-general">
             <h1 className='tittle-text'>Detalle del Medico</h1>
@@ -69,8 +68,11 @@ export default function DetalleMedico() {
                             <input type="text" className="input-form" />
                         </div>
                     </div>
+                    <button className="btn-formulario">Actualizar</button>
                 </div>
+                
             </div>
+            
         </div>
     )
 }
