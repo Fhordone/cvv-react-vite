@@ -4,14 +4,20 @@ import App from "./pages/App"
 import "./styles/index.css"
 import { createHashRouter, RouterProvider } from 'react-router-dom'
 
-import Login from "./pages/Login"
 import ListarPacientes from "./pages/Pacientes/ListarPacientes"
 import AgregarPaciente from "./pages/Pacientes/AgregarPaciente"
 import EditarPaciente from "./pages/Pacientes/EditarPaciente"
 import DetallePaciente from "./pages/Pacientes/DetallePaciente"
+import Dashboard from "./pages/Dashboard"
+import Menu from "./pages/Resources/Menu"
+import Login from "./pages/Login"
 
 
 const router = createHashRouter([
+  {
+    path: "/dashboard",
+    element: <Dashboard />
+  },
   {
     path: "/listarpaciente",
     element: <ListarPacientes />
@@ -29,13 +35,18 @@ const router = createHashRouter([
     element: <DetallePaciente />
   },
   {
-    path: "/", 
+    path: "/login",
     element: <Login />
+  },
+  {
+    path: "/", 
+    element: <Menu />
   },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <Menu />
     <RouterProvider router={router} />
   </React.StrictMode>
 )

@@ -1,7 +1,7 @@
-export default function EditarPaciente(){
+export default function EditarMedico(){
     return (
         <div className="box-general">
-            <h1 className='tittle-text'>Detalle del paciente</h1>
+            <h1 className='tittle-text'>Detalle del Medico</h1>
             <div className='box-content'>
                 <div className='box-user'>
                     <div className='box-user-content'>

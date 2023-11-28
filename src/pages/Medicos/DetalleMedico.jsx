@@ -1,7 +1,8 @@
-export default function EditarPaciente(){
+import './../../styles/Pacientes.css'
+export default function DetalleMedico() {
     return (
         <div className="box-general">
-            <h1 className='tittle-text'>Detalle del paciente</h1>
+            <h1 className='tittle-text'>Detalle del Medico</h1>
             <div className='box-content'>
                 <div className='box-user'>
                     <div className='box-user-content'>
@@ -68,11 +69,8 @@ export default function EditarPaciente(){
                             <input type="text" className="input-form" />
                         </div>
                     </div>
-                    <button className="btn-formulario">Actualizar</button>
                 </div>
-                
             </div>
-            
         </div>
     )
 }

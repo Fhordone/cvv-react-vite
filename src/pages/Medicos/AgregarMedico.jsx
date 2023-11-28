@@ -1,21 +1,8 @@
-export default function EditarPaciente(){
+export default function AgregarMedico(){
     return (
         <div className="box-general">
-            <h1 className='tittle-text'>Detalle del paciente</h1>
-            <div className='box-content'>
-                <div className='box-user'>
-                    <div className='box-user-content'>
-                        <img src="/src/images/perfil.webp" className="photo-perfil" alt="Foto de perfil" />
-                        <h4>Paolo Guerrero</h4>
-                        <div className='user-information'>
-                            <p>DNI: 15985432</p>
-                            <p>Tipo: Paciente</p>
-                            <p>Estado: Activo</p>
-                            <p>Fecha de Registro: 27/05/2023</p>
-                        </div>
-                    </div>
-                </div>
-                <div className='box-formulario'>
+        <h1 className='tittle-text'>Crear Medico</h1>
+        <div className='box-crear-formulario'>
                 <h3 className="Subtittle">Información General</h3>
                     <div className="form-group">
                         <div className="form-column">
@@ -68,11 +55,8 @@ export default function EditarPaciente(){
                             <input type="text" className="input-form" />
                         </div>
                     </div>
-                    <button className="btn-formulario">Actualizar</button>
+                    <button className="btn-formulario">Registrar Paciente</button>
                 </div>
-                
-            </div>
-            
-        </div>
-    )
+                </div>
+    );
 }
